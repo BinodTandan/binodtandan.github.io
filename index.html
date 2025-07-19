@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Binod Tandan — AI/ML Engineer and Data Scientist passionate about building real-time, scalable, cloud-deployed AI systems.">
+  <meta name="keywords" content="Binod Tandan, Data Science Portfolio, Machine Learning, AI Projects, GitHub Pages, GenAI, AWS, PyTorch, Streamlit">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <title>Binod Tandan | Data Scientist Portfolio</title>
   <style>
     body {
@@ -17,6 +21,7 @@
       text-align: center;
       padding: 3rem 2rem;
     }
+    
     header img {
       width: 180px;
       height: 180px;
@@ -24,14 +29,37 @@
       border: 5px solid #fff;
       object-fit: cover;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: block;
+      margin: 0 auto;
     }
     header h1 {
       margin-top: 1rem;
       font-size: 2rem;
+      margin-bottom: 0.3rem;
     }
     header p {
       font-size: 1.1rem;
       color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      header {
+        padding: 2rem 1rem;
+      }
+      main {
+        padding: 1rem;
+      }
     }
     main {
       max-width: 1000px;
@@ -83,6 +111,47 @@
       text-decoration: none;
       border-radius: 6px;
     }
+    .badge {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 4px 8px;
+      margin: 3px 4px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+    }
+    details {
+      background: #ffffff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    details summary {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+    }
+
+    details[open] {
+      background-color: #f1f5f9;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px 12px;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .contact i {
+      margin-right: 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -95,8 +164,82 @@
   <main>
     <section>
       <h2>About Me</h2>
-      <p>I am a passionate Data Science enthusiast deeply inspired by the potential of Machine Learning and Artificial Intelligence to create real-world impact. I enjoy exploring patterns in data, building intelligent systems, and constantly expanding my knowledge in this exciting and evolving field. This portfolio is a growing space to showcase my journey — from academic research to hands-on projects. Stay tuned for some exciting work ahead!</p>
+      <p>I'm a Data Scientist and ML Engineer with a passion for building scalable, real-time AI solutions. My work spans supervised learning, cloud-native pipelines, and GenAI innovations such as RAG and agentic frameworks. I strive to bring cutting-edge AI research into production environments, from edge deployment to user-centric product enhancements.</p>
     </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div>
+        <p><strong>Languages:</strong>
+          <span class="badge">Python</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Java</span>
+          <span class="badge">C++</span>
+          <span class="badge">Bash</span>
+        </p>
+        <p><strong>ML/DL:</strong>
+          <span class="badge">Scikit-learn</span>
+          <span class="badge">TensorFlow</span>
+          <span class="badge">PyTorch</span>
+          <span class="badge">Keras</span>
+          <span class="badge">XGBoost</span>
+          <span class="badge">LightGBM</span>
+          <span class="badge">SVM</span>
+        </p>
+        <p><strong>GenAI & NLP:</strong>
+          <span class="badge">Huggingface Transformers</span>
+          <span class="badge">RAG</span>
+          <span class="badge">SLMs</span>
+          <span class="badge">DistilBERT</span>
+          <span class="badge">Agentic AI</span>
+        </p>
+        <p><strong>Cloud & DevOps:</strong>
+          <span class="badge">AWS S3</span>
+          <span class="badge">SageMaker</span>
+          <span class="badge">Lambda</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Git</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Jenkins</span>
+        </p>
+        <p><strong>Visualization:</strong>
+          <span class="badge">Power BI</span>
+         <span class="badge">Tableau</span>
+         <span class="badge">Matplotlib</span>
+         <span class="badge">Seaborn</span>
+        </p>
+        <p><strong>Tools:</strong>
+          <span class="badge">Jupyter</span>
+          <span class="badge">Streamlit</span>
+          <span class="badge">VS Code</span>
+          <span class="badge">Linux</span>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research & Innovation</h2>
+
+      <details>
+        <summary><strong>🧠 Conversational AI for Security Systems</strong></summary>
+        <p>Designed a lightweight AI assistant to explain system security settings using NLP and Small Language Models (SLMs). Optimized for low-latency edge deployment.</p>
+        <p><strong>Tech:</strong> Python, Transformers, Streamlit, SLMs</p>
+      </details>
+
+      <details>
+        <summary><strong>🧩 Retrieval-Augmented Generation (RAG) Pipeline</strong></summary>
+        <p>Currently developing a QA system using RAG. Integrates document retrieval with generation to support accurate chatbot responses.</p>
+        <p><strong>Tech:</strong> LangChain, FAISS, OpenAI APIs, Streamlit</p>
+      </details>
+
+      <details>
+        <summary><strong>🤖 Agentic AI Framework (In Progress)</strong></summary>
+        <p>Working on a modular framework for autonomous agents with tool use, memory, and reasoning. Combines LLMs with planning algorithms and RAG pipelines.</p>
+        <p><strong>Status:</strong> Research & prototyping phase</p>
+        <p><strong>Tech (planned):</strong> LangGraph, Pinecone, Huggingface Transformers</p>
+      </details>
+    </section>
+
 
     <section>
       <h2>Featured Projects</h2>
@@ -129,28 +272,40 @@
         <p><strong>Features:</strong> TF-IDF resume parsing, automated ranking engine, real-time search and filtering</p>
         <a href="https://github.com/BinodTandan/UNT-Portal" target="_blank">🔗 GitHub Repo</a>
       </div>
-      <div class="project-card">
-        <h3>💼 Data Scientist Salary Prediction (2024)</h3>
-        <p>Built an ML model to predict 2024 Data Scientist salaries using job listings and advanced text extraction from summaries.</p>
-        <p><strong>Stack:</strong> Python, Pandas, Scikit-learn, Regex, Decision Tree, Random Forest, Linear and Lasso Regression</p>
-        <p><strong>Results:</strong> Achieved 78% accuracy; used regex and EDA to extract salary features from unstructured text.</p>
-        <a href="https://github.com/BinodTandan/Data_Science_Salary_Prediction" target="_blank">🔗 GitHub Repo</a>
+      <div id="more-projects" style="display: none;">
+        <div class="project-card">
+          <h3>💼 Data Scientist Salary Prediction (2024)</h3>
+          <p>Built an ML model to predict 2024 Data Scientist salaries using job listings and advanced text extraction from summaries.</p>
+          <p><strong>Stack:</strong> Python, Pandas, Scikit-learn, Regex, Decision Tree, Random Forest, Linear and Lasso Regression</p>
+          <p><strong>Results:</strong> Achieved 78% accuracy; used regex and EDA to extract salary features from unstructured text.</p>
+          <a href="https://github.com/BinodTandan/Data_Science_Salary_Prediction" target="_blank">🔗 GitHub Repo</a>
+        </div>
       </div>
+
+      <div style="text-align: center;">
+        <button onclick="document.getElementById('more-projects').style.display='block'; this.style.display='none';" style="margin-top: 1rem; padding: 10px 20px; border: none; background-color: #2563eb; color: white; border-radius: 8px; cursor: pointer;">
+          Show More Projects
+        </button>
+      </div>
+      
     </section>
 
     <section>
       <h2>Publication</h2>
+      <p>This research explores cyber risk modeling in next-generation transportation systems using data-driven approaches. It was funded in part by the U.S. Department of Homeland Security and published through IEEE.</p>
+
       <p><strong>Explaining Cyber Risks in Transportation 5.0: A Data-Driven Approach</strong><br>
         <a href="https://ieeexplore.ieee.org/document/10848812" target="_blank">View Publication on IEEE</a>
       </p>
     </section>
 
+
     <section>
       <h2>Contact</h2>
       <div class="contact">
-        <a href="mailto:binodtandan26@gmail.com">Gmail</a>
-        <a href="https://github.com/BinodTandan" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/binodtandan/" target="_blank">LinkedIn</a>
+        <a href="mailto:binodtandan26@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+        <a href="https://github.com/BinodTandan" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/binodtandan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
     </section>
   </main>
